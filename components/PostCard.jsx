@@ -3,7 +3,6 @@ import moment from 'moment'
 import Link from 'next/link'
 
 export const PostCard = ({ post }) => {
-  console.log(post)
 
   return (
     <>

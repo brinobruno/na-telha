@@ -7,6 +7,8 @@ import { getPosts } from '../services'
 interface PostsProps {
   posts: {
     title: string
+    categories: any
+    slug: any
     map: any
   }
 }
