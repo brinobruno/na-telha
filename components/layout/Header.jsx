@@ -1,9 +1,16 @@
-import React, { useContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import  Link from 'next/link'
 
-const categories = [{ name: 'Software Development', slug: 'dev' }, { name: 'Sports', slug: 'sports' }]
+import { getCategories } from '../../services'
 
 export const Header = () => {
+  const [categories, setCategories] = useState([])
+
+  useEffect(() => {
+    getCategories()
+      .then((newCategories) => setCategories(newCategories))
+  }, [])
+
   return (
     <>
       <div className="container mx-auto px-10 mb-8">
