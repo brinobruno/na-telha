@@ -45,7 +45,6 @@ export const PostCard = ({ post }) => {
             </span>
           </div>
         </div>
-
         <p className='text-center text-lg text-gray-700 font-normal px-4 lg:px20 mb-8'>
           { post.excerpt }
         </p>
