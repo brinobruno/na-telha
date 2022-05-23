@@ -5,8 +5,6 @@ import { StoriesPosts } from '../sections/StoriesPosts'
 
 import { getPosts } from '../services'
 
-
-
 const Home = ({ posts }) => {
   return (
     <div className="container mx-auto px-10 mb-8">

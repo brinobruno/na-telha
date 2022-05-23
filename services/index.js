@@ -182,9 +182,9 @@ export const getStoriesPosts = async () => {
         createdAt
       }
     }   
-  `;
+  `
 
-  const result = await request(graphqlAPI, query);
+  const result = await request(graphqlAPI, query)
 
-  return result.posts;
-};
+  return result.posts
+}

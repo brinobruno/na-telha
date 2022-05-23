@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import React, { useState, useEffect } from 'react'
+import Carousel from 'react-multi-carousel'
+import 'react-multi-carousel/lib/styles.css'
 
-import { StoriesPostCard } from '../components';
-import { getStoriesPosts } from '../services';
+import { StoriesPostCard } from '../components'
+import { getStoriesPosts } from '../services'
 
 const responsive = {
   superLargeDesktop: {
@@ -25,15 +25,15 @@ const responsive = {
 };
 
 export const StoriesPosts = () => {
-  const [featuredPosts, setFeaturedPosts] = useState([]);
-  const [dataLoaded, setDataLoaded] = useState(false);
+  const [featuredPosts, setFeaturedPosts] = useState([])
+  const [dataLoaded, setDataLoaded] = useState(false)
 
   useEffect(() => {
     getStoriesPosts().then((result) => {
-      setFeaturedPosts(result);
-      setDataLoaded(true);
-    });
-  }, []);
+      setFeaturedPosts(result)
+      setDataLoaded(true)
+    })
+  }, [])
 
   const customLeftArrow = (
     <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-pink-600 rounded-full">
@@ -41,7 +41,7 @@ export const StoriesPosts = () => {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
       </svg>
     </div>
-  );
+  )
 
   const customRightArrow = (
     <div className="absolute arrow-btn right-0 text-center py-3 cursor-pointer bg-pink-600 rounded-full">
@@ -49,7 +49,7 @@ export const StoriesPosts = () => {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
       </svg>
     </div>
-  );
+  )
 
   return (
     <div className="mb-8">
@@ -59,5 +59,5 @@ export const StoriesPosts = () => {
         ))}
       </Carousel>
     </div>
-  );
-};
+  )
+}
