@@ -1,20 +1,13 @@
-import type { NextPage } from 'next'
+
 import Head from 'next/head'
 import { PostCard, PostWidget, Categories } from '../components/index'
 import { StoriesPosts } from '../sections/StoriesPosts'
 
 import { getPosts } from '../services'
 
-interface PostsProps {
-  posts: {
-    title: string
-    categories: any
-    slug: any
-    map: any
-  }
-}
 
-const Home: NextPage<PostsProps> = ({ posts }) => {
+
+const Home = ({ posts }) => {
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
@@ -27,7 +20,7 @@ const Home: NextPage<PostsProps> = ({ posts }) => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className='lg:col-span-8 col-span-1'>
           {
-            posts.map((post: any, index: any) => (
+            posts.map((post, index) => (
               <div>
                 <PostCard post={ post.node } key={ post.title } />
               </div>
