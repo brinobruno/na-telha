@@ -3,6 +3,7 @@ export { PostCard } from './PostCard'
 export { PostWidget } from './PostWidget'
 export { Categories } from './Categories'
 export { StoriesPostCard } from './StoriesPostCard'
+export { Loader } from './Loader'
 
 //Layout components
 export { Header } from './layout/Header'
