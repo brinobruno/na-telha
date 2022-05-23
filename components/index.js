@@ -2,6 +2,7 @@
 export { PostCard } from './PostCard'
 export { PostWidget } from './PostWidget'
 export { Categories } from './Categories'
+export { StoriesPostCard } from './StoriesPostCard'
 
 //Layout components
 export { Header } from './layout/Header'
