@@ -7,7 +7,7 @@ import { getPosts } from '../services'
 
 const Home = ({ posts }) => {
   return (
-    <div className="container mx-auto px-10 mb-8">
+    <div className="container custom-container mx-auto px-5 md:px-10 mb-8">
       <Head>
         <title>Na Telha</title>
         <link rel="icon" href="/favicon.ico" />

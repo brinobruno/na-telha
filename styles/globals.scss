@@ -48,7 +48,18 @@ body {
       width: 60px;
     }
   }
-  
+}
+
+.stories-post-card-title {
+  font-size: 100%;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 2rem;
+  }
+}
+
+.container.custom-container div div ul li:nth-child(1) {
+  padding-left: 0;
 }
 
 button {
