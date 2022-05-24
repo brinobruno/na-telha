@@ -59,13 +59,13 @@ export const CommentsForm = ({ slug }) => {
       <div>
         <div className='bg-white shadow-lg rounded-lg p-8 pb12 mb-8'>
         <h3 className='text-xl mb-8 font-semibold border-b pb-4'>
-          Leave a comment! :&#41;
+          Solta a voz! :&#41; microphone icon here
         </h3>
         <div className='grid grid-cols-1 gap-4 mb-4'>
           <textarea
             ref={ commentElement }
             className='p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700'
-            placeholder='Comment'
+            placeholder='Deixe seu comentário aqui'
             name='comment'
           />
         </div>
@@ -75,7 +75,7 @@ export const CommentsForm = ({ slug }) => {
             ref={ nameElement }
             type="text" 
             className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700'
-            placeholder='Name'
+            placeholder='Nome'
             name='name'
           />
           <input
@@ -100,12 +100,12 @@ export const CommentsForm = ({ slug }) => {
               htmlFor='storeData'
               className='select-none text-gray-500 ml-2 cursor-pointer'
             >
-              Store my e-mail and name for the next time I comment.
+              Lembre meu nome e email para a próxima vez que eu comentar
             </label>
           </div>
         </div>
 
-        {error && <p className='text-xs text-red-500'>All fields are required</p>}
+        {error && <p className='text-xs text-red-500'>Todos os campos são obrigatórios.</p>}
 
         <div className='mt-8'>
           <button
@@ -114,10 +114,10 @@ export const CommentsForm = ({ slug }) => {
             className='transition duration-500 ease hover:bg-indigo-900 
             inline-block bg-pink-600 text-lg rounded-full text-white px-8 py-3'
             >
-          Post comment
+          Postar comentário
           </button>
           { showSuccessMessage && <span className='text-xl float-right font-semibold mt-3 text-green-500'>
-            Comment submitted for review!
+            Comentário enviado para revisão!
             </span> }
         </div>
 
