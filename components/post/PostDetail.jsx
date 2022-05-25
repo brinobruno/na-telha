@@ -28,13 +28,15 @@ export const PostDetail = ({ post }) => {
         return <h4 key={ index } className="text-md font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{ item }</React.Fragment>)}</h4>
       case 'image':
         return (
-          <img
-            key={ index }
-            alt={ obj.title }
-            height={ obj.height }
-            width={ obj.width }
-            src={ obj.src }
-          />
+          <div className='image-inside-post'>
+            <img
+              key={ index }
+              alt={ obj.title }
+              height={ obj.height }
+              width={ obj.width }
+              src={ obj.src }
+            />
+          </div>
         )
       default:
         return modifiedText
@@ -52,8 +54,8 @@ export const PostDetail = ({ post }) => {
           />
         </div>
         <div className='px-4 lg:px-0'>
-          <div className='flex items-center mb-12 w-full'>
-            <div className="flex items-center justify-start lg:mb-0 w-full lg:w-auto mr-2">
+          <div className='flex items-center mb-4 w-full'>
+            <div className="flex items-center justify-start lg:mb-0 w-full lg:w-auto mr-0 md:mr-2">
               <img
                 src={ post.author.photo.url }
                 alt={ post.author.name }
@@ -66,7 +68,7 @@ export const PostDetail = ({ post }) => {
               </p>
             </div>
 
-            <div className="font-medium text-gray-700 ml-2">
+            <div className="flex font-medium text-gray-700 ml-2">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
@@ -76,7 +78,7 @@ export const PostDetail = ({ post }) => {
             </div>
           </div>
 
-          <h1 className='mb-8 text-3xl font-semibold'>
+          <h1 className='mb-10 text-2xl md:text-3xl font-semibold border-b w-full inline-block border-gray-100 pt-2 pb-6'>
             { post.title }
           </h1>
 
