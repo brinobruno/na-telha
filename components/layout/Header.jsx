@@ -34,6 +34,10 @@ export const Header = () => {
                 </Link>
               ))
             }
+              <span
+                className="md:float-right mt-2 align-middle text-white ml-4 font-semibold">
+                Explorar:
+              </span>
           </div>
         </div>
       </div>

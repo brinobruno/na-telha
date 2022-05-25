@@ -7,6 +7,7 @@ export { Loader } from './Loader'
 
 //Layout components
 export { Header } from './layout/Header'
+export { Footer } from './layout/Footer'
 export { Layout } from './layout/Layout'
 
 //Post components
