@@ -31,7 +31,7 @@ export const PostCard = ({ post }) => {
               width="30px"
               className='align-middle rounded-full'
             />
-            <p className='inline align-middle text-gray-700 ml-2 text-lg'>
+            <p className='inline align-middle text-gray-700 ml-2 text-lg -mr-1 md:mr-0'>
               { post.author.name }
             </p>
           </div>

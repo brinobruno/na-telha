@@ -1,5 +1,8 @@
 import React from 'react'
+import { Link } from 'next/link'
 import moment from 'moment'
+
+import { ShareButton } from './../../sections/ShareButton'
 
 export const PostDetail = ({ post }) => {
   const getContentFragment = (index, text, obj, type) => {
@@ -43,6 +46,9 @@ export const PostDetail = ({ post }) => {
     }
   }
 
+  const domainUrl = 'natelha.vercel.app'
+  const baseWhatsAppShareUrl = 'https://web.whatsapp.com/send?text='
+
   return (
     <>
       <div className='bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8'>
@@ -63,7 +69,7 @@ export const PostDetail = ({ post }) => {
                 width="30px"
                 className='align-middle rounded-full'
               />
-              <p className='inline align-middle text-gray-700 ml-2 text-lg'>
+              <p className='inline align-middle text-gray-700 ml-2 text-lg -mr-1 md:mr-0'>
                 { post.author.name }
               </p>
             </div>
@@ -77,6 +83,19 @@ export const PostDetail = ({ post }) => {
               </span>
             </div>
           </div>
+
+          <div>
+              <a
+                href={ `${ baseWhatsAppShareUrl }${ domainUrl }/post/${ post.slug }` }
+                target='_blank'
+              >
+                <ShareButton>
+                  <span>
+                    Share on whatsapp
+                  </span> 
+                </ShareButton>
+              </a>
+            </div>
 
           <h1 className='mb-10 text-2xl md:text-3xl font-semibold border-b w-full inline-block border-gray-100 pt-2 pb-6'>
             { post.title }
