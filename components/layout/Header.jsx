@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import  Link from 'next/link'
+import Image from 'next/image'
 
 import { getCategories } from '../../services'
+import NatelhaLogo from '../../public/natelha-logo.png'
 
 export const Header = () => {
   const [categories, setCategories] = useState([])
@@ -17,9 +19,13 @@ export const Header = () => {
         <div className="w-full inline-block py-8">
           <div className="md:float-left block">
             <Link href="/">
-              <span className="cursor-pointer font-bold text-4xl text-white">
-                naTelha
-              </span>
+              <Image
+                width='200px'
+                height='61.9px'
+                className='natelha-logo'
+                src={ NatelhaLogo }
+                alt='Na Telha'
+              />
             </Link>
           </div>
 
@@ -28,7 +34,7 @@ export const Header = () => {
               categories.map((category) => (
                 <Link key={ category.slug } href={`/category/${category.slug}`}>
                   <span
-                  className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+                  className="md:float-right mt-9 align-middle text-white transition duration-300 hover:text-[#ff914d] ml-4 font-semibold cursor-pointer">
                     { category.name }
                   </span>
                 </Link>

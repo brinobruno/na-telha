@@ -1,7 +1,9 @@
 import React from 'react'
 import  Link from 'next/link'
+import Image from 'next/image'
 
 import { footerLinks } from './content/footer'
+import NatelhaLogo from '../../public/natelha-logo.png'
 
 export const Footer = () => {
   return (
@@ -10,9 +12,13 @@ export const Footer = () => {
         <div className="w-full inline-block py-8">
           <div className="md:float-left block">
             <Link href="/">
-              <span className="cursor-pointer font-bold text-4xl text-white">
-                naTelha
-              </span>
+              <Image
+                width='200px'
+                height='61.9px'
+                className='natelha-logo'
+                src={ NatelhaLogo }
+                alt='Na Telha'
+              />
             </Link>
             <p className='text-white'>
               Um blog sobre o que dá na telha!

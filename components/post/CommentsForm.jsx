@@ -111,8 +111,8 @@ export const CommentsForm = ({ slug }) => {
           <button
             type='button'
             onClick={ handleCommentSubmission }
-            className='transition duration-500 ease hover:bg-indigo-900 
-            inline-block bg-pink-600 text-lg rounded-full text-white px-8 py-3'
+            className='transition duration-500 ease hover:bg-[#E17938]
+            inline-block bg-[#ff914d] text-lg rounded-full text-white px-8 py-3'
             >
           Postar comentário
           </button>

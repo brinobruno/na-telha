@@ -4,7 +4,9 @@ export { PostWidget } from './PostWidget'
 export { Categories } from './Categories'
 export { StoriesPostCard } from './StoriesPostCard'
 export { Loader } from './Loader'
-
+export { BackToTopButton } from './BackToTopButton'
+export { ShareButton } from './ShareButton'
+ 
 //Layout components
 export { Header } from './layout/Header'
 export { Footer } from './layout/Footer'
