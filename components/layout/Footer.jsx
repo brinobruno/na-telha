@@ -15,7 +15,7 @@ export const Footer = () => {
               <Image
                 width='200px'
                 height='61.9px'
-                className='natelha-logo'
+                className='cursor-pointer'
                 src={ NatelhaLogo }
                 alt='Na Telha'
               />
@@ -30,7 +30,7 @@ export const Footer = () => {
                 footerLinks.map((link) => (
                   <a key={ link.name } href={ link.url } target='_blank'>
                     <span
-                    className="md:float-right mt-10 align-middle text-white ml-4 font-semibold cursor-pointer">
+                    className="md:float-right mt-10 align-middle text-white transition duration-300 hover:text-[#ff914d] ml-4 font-semibold cursor-pointer">
                       { link.name }
                     </span>
                   </a>

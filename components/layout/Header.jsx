@@ -22,7 +22,7 @@ export const Header = () => {
               <Image
                 width='200px'
                 height='61.9px'
-                className='natelha-logo'
+                className='cursor-pointer'
                 src={ NatelhaLogo }
                 alt='Na Telha'
               />
