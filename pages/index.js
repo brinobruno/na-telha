@@ -1,4 +1,3 @@
-
 import Head from 'next/head'
 
 import { PostCard, PostWidget, Categories, BackToTopButton } from '../components/index'
@@ -10,7 +9,19 @@ const Home = ({ posts }) => {
     <>
       <div className="container custom-container mx-auto px-4 md:px-10 mb-8">
         <Head>
-          <title>Na Telha</title>
+          <title>Na Telha - Home</title>
+          <meta
+            name='description'
+            content='Um blog para falar o que dá NaTelha - Por Bruno Corrêa'
+          />
+          <meta
+            name='og:title'
+            content='Natelha - Home'
+          />
+          <meta
+            name='og:image'
+            content='/natelha-logo.png'
+          />
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -19,7 +30,7 @@ const Home = ({ posts }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className='lg:col-span-8 col-span-1'>
             {
-              posts.map((post, index) => (
+              posts.map((post) => (
                 <div>
                   <PostCard post={ post.node } key={ post.title } />
                 </div>

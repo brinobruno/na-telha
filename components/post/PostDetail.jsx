@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'next/link'
 import moment from 'moment'
 
 import { ShareButton } from '../index'
@@ -46,8 +45,8 @@ export const PostDetail = ({ post }) => {
     }
   }
 
-  const domainUrl = 'natelha.vercel.app'
-  const baseWhatsAppShareUrl = 'https://web.whatsapp.com/send?text='
+  const domainUrl = 'https://natelha.vercel.app'
+  const baseWhatsAppShareUrl = 'https://wa.me/send?text=Confira%20esse%20post%20do%20blog%20NaTelha:%0a'
 
   return (
     <>

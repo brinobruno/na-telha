@@ -1,5 +1,4 @@
 import React from 'react'
-import { getPosts } from '../services'
 
 export const ShareButton = () => {
   return (

@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 import { getPosts, getPostDetails } from '../../services'
@@ -12,6 +13,34 @@ export default function PostDetails({ post }) {
   return (
     <>
       <div className='container mx-auto px-5 mb-8'>
+        <Head>
+          <title>{ post.title }</title>
+          <meta
+            name='description'
+            content={ post.excerpt }
+          />
+          <meta
+            name='og:title'
+            content={ post.title }
+          />
+          <meta
+            name='og:description'
+            content={ post.excerpt }
+          />
+          <meta
+            name='og:image'
+            itemProp='image'
+            content={ post.featuredImage.url }
+          />
+          <meta
+            name='og:site_name'
+            content='NaTelha Blog'
+          />
+          <meta
+            name='og:type'
+            content='website'
+          />
+        </Head>
         <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
           <div className='col-span-1 lg:col-span-8'>
             <PostDetail post={ post } />
