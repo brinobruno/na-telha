@@ -45,7 +45,7 @@ export const PostDetail = ({ post }) => {
     }
   }
 
-  const domainUrl = 'https://natelha.vercel.app'
+  const domainUrl = process.env.DOMAIN_URL
   const baseWhatsAppShareUrl = 'https://wa.me/send?text=Confira%20esse%20post%20do%20blog%20NaTelha:%0a'
 
   return (
@@ -84,17 +84,15 @@ export const PostDetail = ({ post }) => {
           </div>
 
           <div>
-              <a
-                href={ `${ baseWhatsAppShareUrl }${ domainUrl }/post/${ post.slug }` }
-                target='_blank'
-              >
-                <ShareButton>
-                  <span>
-                    Share on whatsapp
-                  </span> 
-                </ShareButton>
-              </a>
-            </div>
+            <a
+              href={ `${ baseWhatsAppShareUrl }${ domainUrl }/post/${ post.slug }` }
+              target='_blank'
+            >
+              <div className='flex items-start'>
+                <ShareButton />
+              </div>
+            </a>
+          </div>
 
           <h1 className='mb-10 text-2xl md:text-3xl font-semibold border-b w-full inline-block border-gray-100 pt-2 pb-6'>
             { post.title }
@@ -106,6 +104,17 @@ export const PostDetail = ({ post }) => {
             return getContentFragment(index, children, typeObj, typeObj.type)
           })}
 
+          <div>
+            <a
+              href={ `${ baseWhatsAppShareUrl }${ domainUrl }/post/${ post.slug }` }
+              target='_blank'
+            >
+              <div className='flex items-start'>
+                <ShareButton />
+                <p className='ml-2 text-strong font-semibold text-[#da8f02]'>Compartilhe no WhatsApp</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </>
