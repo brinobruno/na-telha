@@ -111,7 +111,7 @@ export const PostDetail = ({ post }) => {
             >
               <div className='flex items-start'>
                 <ShareButton />
-                <p className='ml-2 text-strong font-semibold text-[#da8f02]'>Compartilhe no WhatsApp</p>
+                <p className='ml-2 mb-4 text-strong font-semibold text-[#da8f02]'>Compartilhe no WhatsApp</p>
               </div>
             </a>
           </div>

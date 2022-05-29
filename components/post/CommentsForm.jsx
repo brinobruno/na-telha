@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { BsSoundwave } from 'react-icons/bs'
 
 import { submitComment } from '../../services'
 
@@ -58,8 +59,8 @@ export const CommentsForm = ({ slug }) => {
     <>
       <div>
         <div className='bg-white shadow-lg rounded-lg p-8 pb12 mb-8'>
-        <h3 className='text-xl mb-8 font-semibold border-b pb-4'>
-          Solta a voz! :&#41; microphone icon here
+        <h3 className='text-xl mb-8 font-semibold border-b pb-4 flex items-center gap-2'>
+          Solta a voz! <BsSoundwave />
         </h3>
         <div className='grid grid-cols-1 gap-4 mb-4'>
           <textarea

@@ -20,8 +20,8 @@ export const Header = () => {
           <div className="md:float-left block">
             <Link href="/">
               <Image
-                width='200px'
-                height='61.9px'
+                width='150px'
+                height='45.75px'
                 className='cursor-pointer'
                 src={ NatelhaLogo }
                 alt='Na Telha'
@@ -34,7 +34,7 @@ export const Header = () => {
               categories.map((category) => (
                 <Link key={ category.slug } href={`/category/${category.slug}`}>
                   <span
-                  className="md:float-right mt-9 align-middle text-white transition duration-300 hover:text-[#ff914d] ml-4 font-semibold cursor-pointer">
+                  className="md:float-right mt-[1.65rem] align-middle text-white transition duration-300 hover:text-[#ff914d] ml-4 font-semibold cursor-pointer">
                     { category.name }
                   </span>
                 </Link>

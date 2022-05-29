@@ -13,8 +13,8 @@ export const Footer = () => {
           <div className="md:float-left block">
             <Link href="/">
               <Image
-                width='200px'
-                height='61.9px'
+                width='150px'
+                height='45.75px'
                 className='cursor-pointer'
                 src={ NatelhaLogo }
                 alt='Na Telha'
