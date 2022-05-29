@@ -25,7 +25,9 @@ const CategoryPost = ({ posts }) => {
           content='Natelha - Tópicos'
         />
       </Head>
-
+      <h1 className='text-white text-3xl pb-8'>
+        { }
+      </h1>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="col-span-1 lg:col-span-8">
           {posts.map((post, index) => (

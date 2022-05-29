@@ -1,6 +1,7 @@
 import React from 'react'
 import  Link from 'next/link'
 import Image from 'next/image'
+import { IconContext } from 'react-icons'
 
 import { footerLinks } from './content/footer'
 import NatelhaLogo from '../../public/natelha-logo.png'
@@ -9,7 +10,7 @@ export const Footer = () => {
   return (
     <>
       <div className="container mx-auto px-5 mb-8">
-        <div className="w-full inline-block py-8">
+        <div className="w-full flex align-center justify-between py-8">
           <div className="md:float-left block">
             <Link href="/">
               <Image
@@ -25,17 +26,22 @@ export const Footer = () => {
             </p>
           </div>
 
-          <div className="hidden md:float-left md:contents">
+          <div className="hidden md:flex justify-between items-center w-[125px]">
             {
-                footerLinks.map((link) => (
-                  <a key={ link.name } href={ link.url } target='_blank'>
-                    <span
-                    className="md:float-right mt-10 align-middle text-white transition duration-300 hover:text-[#ff914d] ml-4 font-semibold cursor-pointer">
-                      { link.name }
-                    </span>
-                  </a>
-                ))
-              }
+              footerLinks.map((link) => (
+                <a key={ link.name } href={ link.url } target='_blank'>
+                  <IconContext.Provider
+                    value={{
+                      title: link.name,
+                      color: 'white', 
+                      className:'social-icons', 
+                      size: '32px' 
+                    }}>
+                    <link.icon />
+                  </IconContext.Provider>
+                </a>
+              ))
+            }
           </div>
         </div>
       </div>
