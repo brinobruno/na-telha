@@ -6,6 +6,7 @@ export { StoriesPostCard } from './StoriesPostCard'
 export { Loader } from './Loader'
 export { BackToTopButton } from './BackToTopButton'
 export { ShareButton } from './ShareButton'
+export { NewsletterForm } from './NewsletterForm'
  
 //Layout components
 export { Header } from './layout/Header'

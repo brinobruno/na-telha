@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { PostCard, PostWidget, Categories, BackToTopButton } from '../components/index'
+import { PostCard, PostWidget, Categories, BackToTopButton, NewsletterForm } from '../components/index'
 import { StoriesPosts } from '../sections/StoriesPosts'
 import { getPosts } from '../services'
 
@@ -42,6 +42,7 @@ const Home = ({ posts }) => {
             <div className="lg:sticky relative top-8">
               <PostWidget />
               <Categories />
+              <NewsletterForm />
             </div>
           </div>
         </div>
