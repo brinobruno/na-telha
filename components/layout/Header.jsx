@@ -30,7 +30,7 @@ export const Header = () => {
                 />
               </Link>
             </div>
-            <div className="invisible md:visible">
+            <div className="visible">
               <div className="">
                 {
                   categories.map((category) => (

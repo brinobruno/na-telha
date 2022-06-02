@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <>
       <div className="container mx-auto px-5 mb-8">
-        <div className="w-full flex align-center justify-between py-8">
+        <div className="w-full flex flex-col md:flex-row gap-8 md:gap-0 align-center justify-between py-8">
           <div className="md:float-left block">
             <Link href="/">
               <Image
@@ -26,7 +26,7 @@ export const Footer = () => {
             </p>
           </div>
 
-          <div className="hidden md:flex justify-between items-center w-[125px]">
+          <div className="flex justify-between items-center w-[125px]">
             {
               footerLinks.map((link) => (
                 <a key={ link.name } href={ link.url } target='_blank'>
