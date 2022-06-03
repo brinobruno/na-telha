@@ -28,6 +28,8 @@ export const getPosts = async () => {
               name
               slug
             }
+            minuteRead
+            categoryTag
           }
         }
       }
@@ -66,6 +68,8 @@ export const getPostDetails = async (slug) => {
         content {
           raw
         }
+        minuteRead
+        categoryTag
       }
     }
   `

@@ -22,7 +22,7 @@ export const PostCard = ({ post }) => {
             { post.title }
           </Link>
         </h1>
-        <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
+        <div className="block lg:flex text-center items-center justify-center mb-6 w-full">
           <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
             <img
               src={ post.author.photo.url }
@@ -45,10 +45,13 @@ export const PostCard = ({ post }) => {
             </span>
           </div>
         </div>
+        <p className='text-center text-gray-500 -mt-6 mb-6'>
+          { post.minuteRead }
+        </p>
+
         <p className='text-center text-lg text-gray-700 font-normal px-4 lg:px20 mb-8'>
           { post.excerpt }
         </p>
-
         <div className='text-center'>
           <Link href={`/post/${post.slug}`}>
             <span className='transition duration-500 transform hover:-translate-y-1 inline-block bg-[#ff914d] text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer'>
