@@ -27,6 +27,9 @@ If you don't speak portuguese though I'm not sure you'll care so much about its 
 - `public/*` - Static assets.
 - `styles/*` - A handful of global styles to complement tailwindcss.
 
+## Soon
+- Schema utilized available for the public
+
 ## Running Locally
 
 ```bash
