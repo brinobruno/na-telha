@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 import { getCategories, getCategoryPost } from '../../services'
-import { PostCard, Categories, Loader } from '../../components'
+import { PostCard, Categories, Loader, NewsletterForm } from '../../components'
 
 const CategoryPost = ({ posts }) => {
   const router = useRouter()
@@ -34,6 +34,7 @@ const CategoryPost = ({ posts }) => {
         <div className="col-span-1 lg:col-span-4">
           <div className="relative lg:sticky top-8">
             <Categories />
+            <NewsletterForm />
           </div>
         </div>
       </div>

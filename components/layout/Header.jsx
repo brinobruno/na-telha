@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { IconContext } from 'react-icons'
 
 import { getCategories } from '../../services'
 import NatelhaLogo from '../../public/natelha-logo.png'

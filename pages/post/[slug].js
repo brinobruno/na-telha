@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 import { getPosts, getPostDetails } from '../../services'
-import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader } from '../../components'
+import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader, NewsletterForm } from '../../components'
 
 export default function PostDetails({ post }) {
   const router = useRouter()
@@ -52,6 +52,7 @@ export default function PostDetails({ post }) {
             <div className='relative lg:sticky top-8'>
               <PostWidget slug={ post.slug } categories={ post.categories.map((category) => category.slug) } />
               <Categories />
+              <NewsletterForm />
             </div>
           </div>
         </div>
