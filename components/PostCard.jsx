@@ -46,7 +46,7 @@ export const PostCard = ({ post }) => {
           </div>
         </div>
         <p className='text-center text-gray-500 -mt-6 mb-6'>
-          { post.minuteRead }
+          { post.minuteRead } min. de leitura
         </p>
 
         <p className='text-center text-lg text-gray-700 font-normal px-4 lg:px20 mb-8'>

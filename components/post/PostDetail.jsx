@@ -94,7 +94,7 @@ export const PostDetail = ({ post }) => {
           </div>
 
           <p className='mt-1 text-gray-500'>
-            { post.minuteRead }
+            { post.minuteRead } min. de leitura
           </p>
           <h1 className='mb-10 text-2xl md:text-3xl font-semibold border-b w-full inline-block border-gray-100 pt-2 pb-6'>
             { post.title }
