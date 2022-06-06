@@ -45,7 +45,7 @@ export const PostDetail = ({ post }) => {
     }
   }
 
-  const domainUrl = process.env.DOMAIN_URL
+  const domainUrl = 'https://natelha.blog'
   const baseWhatsAppShareUrl = 'https://wa.me/send?text=Confira%20esse%20post%20do%20blog%20NaTelha:%0a'
 
   return (
