@@ -1,24 +1,39 @@
-# Next.js + Tailwind CSS Example
+# NaTelha Blog
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+- **Live blog**: [URL](https://natelha.blog/)
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Query language**: [GraphQL](https://graphql.org/)
+- **Content**: [GraphCMS](https://graphcms.com/)
+- **Newsletter**: [EmailJS](https://www.emailjs.com/)
+- **Deployment**: [Vercel](https://vercel.com/)
+- **Data**: [Google Analytics](https://developers.google.com/analytics)
 
-## Deploy your own
+## Project description
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+I'm extremely thrilled to announce my first blog ever created: NaTelha! One day I was wondering about and realized that I had a lot to say about some topics and wanted to share my thoughts with whoever's willing to listen =)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+So go ahead and check out [natelha.blog](https://natelha.blog/), comments are appreciated!
 
-## How to use
+If you don't speak portuguese though I'm not sure you'll care so much about its content (pt-en togglers are on the plans), but if you're looking around here I supposed you're interested in code, so let's get to it, I hope you get intrigued, curious and inspired to give life to your own ideas, really wish this helps somehow.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## Project Overview
+
+- `components/*` - Various components used throughout the site.
+- `layouts/*` - The different layout options available to use on each page.
+- `pages/api/*` - [API routes](https://nextjs.org/docs/api-routes/introduction) Powering comments creation.
+- `services/index` - Handles requests made with [graphql](https://graphql.org) to graphCMS content, for each purpose.
+- `pages/*` - All other static pages such as category post display, each post content and 404.
+- `public/*` - Static assets.
+- `styles/*` - A handful of global styles to complement tailwindcss.
+
+## Running Locally
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
+$ git clone https://github.com/brinobruno/na-telha.git
+$ cd na-telha
+$ yarn install
+$ yarn run dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-#
+Create a `.env` file similar to `.ENVexample.md` and include the appropriate keys.
