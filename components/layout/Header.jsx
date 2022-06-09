@@ -20,13 +20,15 @@ export const Header = () => {
           <div className="flex items-center justify-between">
             <div>
               <Link href="/">
-                <Image
-                  width='150px'
-                  height='45.75px'
-                  className='cursor-pointer'
-                  src={ NatelhaLogo }
-                  alt='Na Telha'
-                />
+                <a>
+                  <Image
+                    width='150px'
+                    height='45.75px'
+                    className='cursor-pointer'
+                    src={ NatelhaLogo }
+                    alt='Na Telha'
+                  />
+                </a>
               </Link>
             </div>
             <div className="visible">
