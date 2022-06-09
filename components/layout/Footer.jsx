@@ -13,13 +13,15 @@ export const Footer = () => {
         <div className="w-full flex flex-col md:flex-row gap-8 md:gap-0 align-center justify-between py-8">
           <div className="md:float-left block">
             <Link href="/">
-              <Image
-                width='150px'
-                height='45.75px'
-                className='cursor-pointer'
-                src={ NatelhaLogo }
-                alt='Na Telha'
-              />
+              <a>
+                <Image
+                  width='150px'
+                  height='45.75px'
+                  className='cursor-pointer'
+                  src={ NatelhaLogo }
+                  alt='Na Telha'
+                />
+              </a>
             </Link>
             <p className='text-white'>
               Um blog sobre o que dá na telha!
