@@ -5,7 +5,6 @@ import { submitComment } from '../../services'
 
 export const CommentsForm = ({ slug }) => {
   const [error, setError] = useState(false)  
-  const [localStorage, setLocalStorage] = useState(null)
   const [showSuccessMessage, setShowSuccessMessage] = useState(false)
 
   const commentElement = useRef()
@@ -46,7 +45,7 @@ export const CommentsForm = ({ slug }) => {
     }
 
     submitComment(commentObj)
-      .then((response) => {
+      .then((_response) => {
         setShowSuccessMessage(true)
 
         setTimeout(() => {
