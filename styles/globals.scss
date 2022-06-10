@@ -125,3 +125,11 @@ button {
     filter: brightness(1.2);
   }
 }
+
+.menu-icon {
+  color: white;
+
+  &:hover, &:focus {
+    color: #ff914d;
+  }
+}

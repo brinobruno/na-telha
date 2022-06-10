@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import { IconContext } from 'react-icons'
 import { RiMenu3Fill } from 'react-icons/ri'
 
 import { getCategories } from '../../services'
@@ -46,7 +47,13 @@ export const Header = () => {
               className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
               aria-label="toggle menu"
             >
-              <RiMenu3Fill />
+              <IconContext.Provider
+                value={{
+                  className:'menu-icon',
+                  size: '32px'
+                }}>
+                <RiMenu3Fill />
+              </IconContext.Provider>
             </button>
           </div>
         </div>
