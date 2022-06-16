@@ -11,8 +11,8 @@ export const Author = ({ author }) => {
             className='align-middle rounded-full'
             src={ author.photo.url }
             alt={ author.name }
-            height="100px"
-            width="100px"
+            height='100px'
+            width='100px'
           />
         </div>
 

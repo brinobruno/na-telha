@@ -8,7 +8,7 @@ export default async function comments(request, response) {
     headers: {
       authorization: `Bearer ${ graphcmsToken }`
     }
-  });
+  })
 
   const query = gql`
   mutation CreateComment($name: String!, $email: String!, $comment: String!, $slug: String!) {

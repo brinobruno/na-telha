@@ -13,7 +13,7 @@ export const Categories = () => {
 
   return (
     <>
-      <div className="bg-white shadow-lg rounded-lg px-4 pt-8 mb-8 pb-8 sm:pb-12">
+      <div className='bg-white shadow-lg rounded-lg px-4 pt-8 mb-8 pb-8 sm:pb-12'>
         <h3 className='text-xl mb-8 font-semibold border-b pb-4'>
           Tópicos
         </h3>

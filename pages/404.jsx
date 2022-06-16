@@ -14,7 +14,7 @@ const NotFoundPage = () => {
           </h1>
         </div>
         <div className='text-center mt-3'>
-          <Link href="/">
+          <Link href='/'>
             <a className='text-center text-black bg-white p-3 rounded-full'>
               Voltar para a home
             </a>

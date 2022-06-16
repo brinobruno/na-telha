@@ -73,14 +73,14 @@ export const CommentsForm = ({ slug }) => {
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4'>
           <input
             ref={ nameElement }
-            type="text" 
+            type='text' 
             className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700'
             placeholder='Nome'
             name='name'
           />
           <input
             ref={ emailElement }
-            type="text" 
+            type='text' 
             className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700'
             placeholder='Email'
             name='email'
@@ -91,7 +91,7 @@ export const CommentsForm = ({ slug }) => {
           <div>
             <input
               ref={ storeDataElement }
-              type="checkbox"
+              type='checkbox'
               id='storeData'
               name='storeData'
               value={ true }
