@@ -30,9 +30,9 @@ const Home = ({ posts }) => {
         <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
           <div className='lg:col-span-8 col-span-1'>
             {
-              posts.map((post) => (
+              posts.reverse().map((post) => (
                 <div>
-                  <PostCard post={ post.node } key={ post.title } />
+                  <PostCard post={ post.node } key={ post.node } />
                 </div>
               ))
             }
