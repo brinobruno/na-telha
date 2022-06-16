@@ -11,13 +11,13 @@ export const PostWidget = ({ categories, slug }) => {
   useEffect(() => {
     if(slug) {
       getSimilarPosts(categories, slug)
-        .then((result) => setRelatedPosts(result))
+        .then((result) => setRelatedPosts(result.reverse()))
     }
     else {
       getMostRecentPosts()
-      .then((result) => setRelatedPosts(result))
+      .then((result) => setRelatedPosts(result.reverse()))
     }
-
+    
   }, [slug])
 
   return (
