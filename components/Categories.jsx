@@ -8,7 +8,7 @@ export const Categories = () => {
 
   useEffect(() => {
     getCategories()
-      .then((newCategories) => setCategories(newCategories))
+      .then((newCategories) => setCategories(newCategories.reverse()))
   }, [])
 
   return (
