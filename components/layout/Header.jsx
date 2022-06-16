@@ -13,7 +13,7 @@ export const Header = () => {
 
   useEffect(() => {
     getCategories()
-      .then((newCategories) => setCategories(newCategories))
+      .then((newCategories) => setCategories(newCategories.reverse()))
   }, [])
 
   const toggleMenu = () => {
