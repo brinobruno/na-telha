@@ -57,9 +57,9 @@ export const StoriesPosts = () => {
 
   return (
     <div className='mb-8'>
-      <Carousel className='custom-carousel' infinite customLeftArrow={customLeftArrow} customRightArrow={customRightArrow} responsive={responsive} itemClass='px-4'>
+      <Carousel className='custom-carousel' infinite customLeftArrow={ customLeftArrow } customRightArrow={ customRightArrow } responsive={ responsive } itemClass='px-4'>
         {dataLoaded && featuredPosts.map((post, index) => (
-          <StoriesPostCard key={index} post={post} />
+          <StoriesPostCard key={ index } post={ post } />
         ))}
       </Carousel>
     </div>

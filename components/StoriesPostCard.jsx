@@ -19,7 +19,9 @@ export const StoriesPostCard = ({ post }) => (
           className='align-middle drop-shadow-lg rounded-full'
           src={ post.author.photo.url }
         />
-        <p className='stories-card inline align-middle text-white text-shadow ml-2 font-medium'>{post.author.name}</p>
+        <p className='stories-card inline align-middle text-white text-shadow ml-2 font-medium'>
+          { post.author.name }
+        </p>
       </div>
     </div>
     <Link href={`/post/${post.slug}`}><span className='cursor-pointer absolute w-full h-full' /></Link>

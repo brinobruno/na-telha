@@ -1,5 +1,5 @@
 import React from 'react'
-import  Link from 'next/link'
+import Link from 'next/link'
 import Image from 'next/image'
 import { IconContext } from 'react-icons'
 
@@ -38,7 +38,8 @@ export const Footer = () => {
                       color: 'white', 
                       className:'social-icons', 
                       size: '32px' 
-                    }}>
+                    }}
+                  >
                     <link.icon />
                   </IconContext.Provider>
                 </a>
