@@ -58,7 +58,7 @@ export const Header = () => {
           </div>
         </div>
 
-        <div className={`items-center md:flex ${ isActive ? 'block absolute bg-[#131516] z-10 h-100 w-screen pb-16 pt-4 -translate-x-[39px] overflow-hidden' : 'hidden' }`}>
+        <div className={`items-center md:flex ${ isActive ? 'block absolute bg-[#131516] z-10 h-100 w-screen pb-14 pt-4 -translate-x-[39px] overflow-hidden' : 'hidden' }`}>
           <div className={`flex flex-col md:flex-row`}>
             {
               categories.map((category) => (
