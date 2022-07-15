@@ -32,7 +32,7 @@ export const PostWidget = ({ categories, slug }) => {
             <div className='w-16 flex-none'>
               <div>
               <Image
-                className='related-posts-image align-middle rounded-full'
+                className='related-posts-image align-middle rounded-full object-cover'
                 src={ post.featuredImage.url }
                 alt={ post.title }
                 title={ post.title }
