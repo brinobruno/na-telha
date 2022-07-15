@@ -38,7 +38,7 @@ export const NewsletterForm = () => {
               required
             />
             <button
-              className='flex-shrink-0 font-semibold bg-[#ff914d] hover:bg-[#d47133] border-[#ff914d] hover:border-[#d47133] text-md border-4 text-white py-1 px-2 rounded'
+              className='flex-shrink-0 font-semibold bg-[#ff914d] hover:bg-[#d47133] border-[#ff914d] hover:border-[#d47133] text-md border-4 text-white py-1 px-2 rounded transition-all'
               type='submit'
             >
               Inscreva-se
