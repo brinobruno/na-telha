@@ -60,7 +60,8 @@ export const PostDetail = ({ post }) => {
         </div>
         <div className='px-4 lg:px-0'>
           <div className='flex items-center mb-4 w-full'>
-            <div className='flex items-center justify-start lg:mb-0 w-full lg:w-auto mr-0 md:mr-2'>
+            <div className='flex items-center justify-start lg:mb-0 w-full
+            lg:w-auto mr-0 md:mr-2'>
               <img
                 src={ post.author.photo.url }
                 alt={ post.author.name }
@@ -68,7 +69,8 @@ export const PostDetail = ({ post }) => {
                 width='30px'
                 className='align-middle rounded-full'
               />
-              <p className='inline align-middle text-gray-700 ml-2 text-lg -mr-1 md:mr-0'>
+              <p className='inline align-middle text-gray-700 ml-2 text-lg
+              -mr-1 md:mr-0'>
                 { post.author.name }
               </p>
             </div>
@@ -96,7 +98,8 @@ export const PostDetail = ({ post }) => {
           <p className='mt-1 text-gray-500'>
             { post.minuteRead } min. de leitura
           </p>
-          <h1 className='mb-10 text-2xl md:text-3xl font-semibold border-b w-full inline-block border-gray-100 pt-2 pb-6'>
+          <h1 className='mb-10 text-2xl md:text-3xl font-semibold border-b
+          w-full inline-block border-gray-100 pt-2 pb-6'>
             { post.title }
           </h1>
 
@@ -113,7 +116,9 @@ export const PostDetail = ({ post }) => {
             >
               <div className='flex items-start'>
                 <ShareButton />
-                <p className='ml-2 mb-4 text-strong font-semibold text-[#da8f02]'>Compartilhe no WhatsApp</p>
+                <p className='ml-2 mb-4 text-strong font-semibold text-[#da8f02]'>
+                  Compartilhe no WhatsApp
+                </p>
               </div>
             </a>
           </div>

@@ -58,13 +58,15 @@ export const CommentsForm = ({ slug }) => {
     <>
       <div>
         <div className='bg-white shadow-lg rounded-lg p-8 pb12 mb-8'>
-        <h3 className='text-xl mb-8 font-semibold border-b pb-4 flex items-center gap-2'>
+        <h3 className='text-xl mb-8 font-semibold border-b pb-4 flex
+        items-center gap-2'>
           Solta a voz! <BsSoundwave />
         </h3>
         <div className='grid grid-cols-1 gap-4 mb-4'>
           <textarea
             ref={ commentElement }
-            className='p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700'
+            className='p-4 outline-none w-full rounded-lg focus:ring-2
+            focus:ring-gray-200 bg-gray-100 text-gray-700'
             placeholder='Deixe seu comentário aqui'
             name='comment'
           />
@@ -74,14 +76,16 @@ export const CommentsForm = ({ slug }) => {
           <input
             ref={ nameElement }
             type='text' 
-            className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700'
+            className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2
+            focus:ring-gray-200 bg-gray-100 text-gray-700'
             placeholder='Nome'
             name='name'
           />
           <input
             ref={ emailElement }
             type='text' 
-            className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700'
+            className='py-2 px-4 outline-none w-full rounded-lg focus:ring-2
+            focus:ring-gray-200 bg-gray-100 text-gray-700'
             placeholder='Email'
             name='email'
           />
@@ -112,11 +116,13 @@ export const CommentsForm = ({ slug }) => {
             type='button'
             onClick={ handleCommentSubmission }
             className='transition duration-500 ease hover:bg-[#E17938]
-            inline-block bg-[#ff914d] text-lg rounded-full text-white px-8 py-3'
+            inline-block bg-[#ff914d] text-lg rounded-full text-white
+            px-8 py-3'
             >
           Postar comentário
           </button>
-          { showSuccessMessage && <span className='text-xl float-right font-semibold mt-3 text-green-500'>
+          { showSuccessMessage && <span className='text-xl float-right
+          font-semibold mt-3 text-green-500'>
             Comentário enviado para revisão!
             </span> }
         </div>
