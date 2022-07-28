@@ -23,7 +23,8 @@ export const Header = () => {
   return (
     <>
       <nav className='container mx-auto px-5 mb-4'>
-        <div className='container px-2 md:px-5 mx-auto md:flex md:justify-between md:items-center w-full inline-block py-8'>
+        <div className='container px-2 md:px-5 mx-auto md:flex md:justify-between
+        md:items-center w-full inline-block py-8'>
           <div className='flex items-center justify-between'>
             <div>
               <Link href='/'>
@@ -43,7 +44,10 @@ export const Header = () => {
               <button
                 onClick={ toggleMenu }
                 type='button'
-                className='text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400'
+                className='text-gray-500 dark:text-gray-200
+                hover:text-gray-600 dark:hover:text-gray-400
+                focus:outline-none focus:text-gray-600
+                dark:focus:text-gray-400'
                 aria-label='toggle menu'
               >
                 <IconContext.Provider
@@ -63,7 +67,9 @@ export const Header = () => {
                 categories.map((category) => (
                   <Link key={ category.slug } href={`/category/${category.slug}`}>
                     <span
-                    className='text-xl md:text-base mt-[1.65rem] align-middle text-white transition duration-300 hover:text-[#ff914d] ml-10 md:ml-4 font-semibold cursor-pointer'>
+                    className='text-xl md:text-base mt-[1.65rem] align-middle
+                    text-white transition duration-300 hover:text-[#ff914d]
+                    ml-10 md:ml-4 font-semibold cursor-pointer'>
                       { category.name }
                     </span>
                   </Link>

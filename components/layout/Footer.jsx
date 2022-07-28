@@ -10,7 +10,8 @@ export const Footer = () => {
   return (
     <>
       <div className='container mx-auto px-5 mb-8'>
-        <div className='w-full flex flex-col md:flex-row gap-8 md:gap-0 align-center justify-between py-8'>
+        <div className='w-full flex flex-col md:flex-row gap-8 md:gap-0
+        align-center justify-between py-8'>
           <div className='md:float-left block'>
             <Link href='/'>
               <a>
