@@ -109,7 +109,10 @@ export const CommentsForm = ({ slug }) => {
           </div>
         </div>
 
-        {error && <p className='text-xs text-red-500'>Todos os campos são obrigatórios.</p>}
+        {error && <p className='text-xs text-red-500'>
+          Todos os campos são obrigatórios.
+        </p>
+        }
 
         <div className='mt-8'>
           <button

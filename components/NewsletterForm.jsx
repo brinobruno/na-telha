@@ -21,7 +21,8 @@ export const NewsletterForm = () => {
     <>
       <div>
         <h3 className='text-white pb-6'>
-          Inscreva-se na Newsletter do NaTelha para receber notificações de novos posts!
+          Inscreva-se na Newsletter do NaTelha para receber notificações de
+          novos posts!
         </h3>
         <form
           onSubmit={ handleFormSubmit }
@@ -29,7 +30,8 @@ export const NewsletterForm = () => {
         >
           <div className='flex items-center border-b border-[#ff914d] py-2'>
             <input
-              className='appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none text-md'
+              className='appearance-none bg-transparent border-none w-full
+              text-white mr-3 py-1 px-2 leading-tight focus:outline-none text-md'
               type='email'
               id='email'
               name='email'
@@ -38,7 +40,9 @@ export const NewsletterForm = () => {
               required
             />
             <button
-              className='flex-shrink-0 font-semibold bg-[#ff914d] hover:bg-[#d47133] border-[#ff914d] hover:border-[#d47133] text-md border-4 text-white py-1 px-2 rounded transition-all'
+              className='flex-shrink-0 font-semibold bg-[#ff914d]
+              hover:bg-[#d47133] border-[#ff914d] hover:border-[#d47133]
+              text-md border-4 text-white py-1 px-2 rounded transition-all'
               type='submit'
             >
               Inscreva-se
