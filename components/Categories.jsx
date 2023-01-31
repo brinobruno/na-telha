@@ -20,7 +20,8 @@ export const Categories = () => {
         </h3>
         { categories.map((category) => (
           <Link key={ category.slug } href={`/category/${category.slug}`}>
-            <span className='cursor-pointer block pb-3 mb-3'>
+            <span className='cursor-pointer block pb-3 mb-3 hover:text-[#ff914d]
+            transition-colors duration-250 max-w-max'>
               { category.name }
             </span>
           </Link>
