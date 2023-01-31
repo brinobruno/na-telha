@@ -51,7 +51,10 @@ export const PostWidget = ({ categories, slug }) => {
                 href={`/post/${post.slug}`}
                 key='post.title'
                 className='text-md'>
-                  { post.title }
+                  <span className='cursor-pointer hover:text-[#ff914d]
+                  transition-colors duration-250'>
+                    { post.title }
+                  </span>
               </Link>
             </div>
           </div>
