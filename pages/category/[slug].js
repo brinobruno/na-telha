@@ -13,7 +13,7 @@ const CategoryPost = ({ posts }) => {
   }
 
   return (
-    <div className='container mx-auto px-5 mb-8'>
+    <div className='container mx-auto px-5 mb-8 mt-[9.625rem]'>
       <Head>
         <title>NaTelha - Tópicos</title>
         <meta
