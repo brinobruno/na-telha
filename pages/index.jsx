@@ -7,7 +7,8 @@ import { getPosts } from '../services'
 const Home = ({ posts }) => {
   return (
     <>
-      <div className='container custom-container mx-auto px-4 md:px-10 mb-8'>
+      <div className='container custom-container mx-auto px-4 md:px-10 mb-8
+      mt-[9.625rem]'>
         <Head>
           <title>Na Telha - Home</title>
           <meta

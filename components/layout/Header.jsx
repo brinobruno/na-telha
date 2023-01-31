@@ -22,9 +22,10 @@ export const Header = () => {
 
   return (
     <>
-      <nav className='container mx-auto px-5 mb-4'>
+      <nav className='container mx-auto px-5 pb-[1.7rem] bg-[#121b1f] z-10 fixed
+      top-0 left-0 right-0 brightness-[0.8]'>
         <div className='container px-2 md:px-5 mx-auto md:flex md:justify-between
-        md:items-center w-full inline-block py-8'>
+        md:items-center w-full inline-block pt-6 pb-1'>
           <div className='flex items-center justify-between'>
             <div>
               <Link href='/'>
@@ -61,13 +62,13 @@ export const Header = () => {
             </div>
           </div>
 
-          <div className={`items-center md:flex ${ isActive ? 'block absolute bg-[#131516] z-10 h-100 w-screen pb-14 pt-4 -translate-x-[39px] overflow-hidden' : 'hidden' }`}>
-            <div className='flex flex-col md:flex-row'>
+          <div className={`items-center md:flex ${ isActive ? 'block absolute bg-[#121b1f] mt-6 brightness[0.8] z-10 h-100 w-screen pb-14 pt-4 -translate-x-[39px] overflow-hidden' : 'hidden' }`}>
+            <div className='flex flex-col md:flex-row gap-[1.5rem]'>
               {
                 categories.map((category) => (
                   <Link key={ category.slug } href={`/category/${category.slug}`}>
                     <span
-                    className='text-xl md:text-base mt-[1.65rem] align-middle
+                    className='text-xl md:text-base align-middle
                     text-white transition duration-300 hover:text-[#ff914d]
                     ml-10 md:ml-4 font-semibold cursor-pointer'>
                       { category.name }
