@@ -28,10 +28,12 @@ export const NewsletterForm = () => {
           onSubmit={ handleFormSubmit }
           className='w-full'
         >
-          <div className='flex items-center border-b border-[#ff914d] py-2'>
+          <div className='flex items-center py-2 border-b border-[#FFF]
+          focus-within:border-[#ff914d] transition-all duration-300'>
             <input
               className='appearance-none bg-transparent border-none w-full
-              text-white mr-3 py-1 px-2 leading-tight focus:outline-none text-md'
+              text-white mr-3 py-1 px-2 leading-tight focus:outline-none text-md
+              focus:text-[#ff914d] transition-colors duration-300'
               type='email'
               id='email'
               name='email'
